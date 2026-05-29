@@ -74,7 +74,7 @@ Thank you for using BART web! This is an automated message. Do not reply to this
 Here is your key: {}
 
 When the job is done, you can ge the results through this link:\n {}
-'''.format(user_key, 'http://bartweb.org/result?user_key='+user_key)
+'''.format(user_key, 'https://bartweb.pods.uvarc.io/result?user_key=' + user_key)   # changed hard-coded URL ('http://bartweb.org/result?user_key='+user_key)   260529_Bhummanat
 
     # === when job finishes successfully
     if email_type == 'Done':
@@ -83,7 +83,7 @@ When the job is done, you can ge the results through this link:\n {}
 Congratulations! Your BART job is done!
 
 Please get the results through this link: {}
-'''.format('http://bartweb.org/result?user_key='+user_key)
+'''.format('https://bartweb.pods.uvarc.io/result?user_key=' + user_key)   # changed hard-coded URL ('http://bartweb.org/result?user_key='+user_key)   260529_Bhummanat
 
     # === when job finishes with an error
     if email_type == 'Error':
